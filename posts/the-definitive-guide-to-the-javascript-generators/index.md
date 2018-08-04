@@ -1,5 +1,3 @@
-There are many articles [^http://odetocode.com/blogs/scott/archive/2014/02/17/thoughts-on-javascript-generators.aspx] [^http://truffles.me.uk/playing-with-es6-generators-to-make-a-maybe-in-javascript] [^http://devsmash.com/blog/whats-the-big-deal-with-generators] [^http://luisvega.me/understanding-node-generators] [^http://webreflection.blogspot.com/2013/06/on-harmony-javascript-generators.html] [^http://blog.alexmaccaw.com/how-yield-will-transform-node] [^http://tobyho.com/2013/06/16/what-are-generators/] about JavaScript generators. I have read them all and nonetheless I have struggled to understand the execution order and what are the use cases. I have summarized the learning process that got me to understanding ES6 generators.
-
 ## Building an Iterator from a Generator
 
 ```js
@@ -533,17 +531,3 @@ controller(function* () {
 ```
 
 Notice that the execution was interrupted before `curry(foo, 'c')` was called.
-
-## Libraries To Streamline Generator Based Flow-Control
-
-There are several existing libraries that implement a variation of the above controller, as well as offer interoperability with promises, trunks and other techniques.
-
-## Further Reading
-
-[Exploring ES6](http://exploringjs.com/) has a chapter about [Generators](http://exploringjs.com/es6/ch_generators.html). [Axel Rauschmayer](https://twitter.com/rauschma) [write up](http://2ality.com/2015/03/es6-generators.html) about generators covers a lot more than I managed to cover in this article. It is a lengthy read, though I thoroughly recommend it.
-
-* https://github.com/jmar777/suspend
-* https://github.com/visionmedia/co
-* https://github.com/bjouhier/galaxy
-* https://github.com/spion/genny
-* https://github.com/creationix/gen-run
